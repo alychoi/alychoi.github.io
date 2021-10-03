@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music</title>
+  </head>
+  <body>
+    <div class="topnav" style="background-color: black">
+      <div><a href="index.html"><img style="position:absolute; top:25px;"
+            class="icon"
+            src="media/images/aquamarine.png"
+            width="4%"></a></div>
+      <div class="words" style="background-color: black;"><a href="index.html">&nbsp;HOME</a></div>
+      <div class="words"><a href="movies.html">MOVIES</a></div>
+      <div class="words"><a href="music.html" class="active">MUSIC</a></div>
+      <div class="words"><a href="places.html">PLACES</a></div>
+      <div class="words"><a href="projects.html">PROJECTS</a></div>
+    </div>
+    <style>
+       body {
+        margin: 0 auto;
+        padding: 0 auto;
+				font-family: Courier;
+        background: black;
+        letter-spacing: 0.5px;
+       }
+      .topnav > div {
+        display: inline-block;
+    		*display: inline;
+    		zoom: 1;
+    		width: 15%;
+    		text-align: center;
+      }
+      .topnav {
+        overflow: scroll;
+        border-bottom-style: solid;
+        border-color: white;
+        border-width: 5px;
+        box-shadow: 0px 10px 50px skyblue;
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+        font-family: Courier;
+      }
+      .topnav .words {
+        oveflow: hidden;
+        padding-top: 45px;
+  			padding-bottom: 45px;
+      }
+      .topnav a {
+  			text-decoration: none;
+  			font-size: 14px;
+        font-weight: bold;
+        color: #989898;
+      }
+      .topnav a:hover {
+        color: #FFFFFF;
+      }
+      .topnav a.active {
+        color: #FFFFFF;
+      }
+      .cover {
+        background-image: url("media/images/radio.jpeg");
+        background-size: cover;
+  			background-repeat: no-repeat;
+  			background-position: center;
+ 				background-attachment: fixed;
+        min-height: 775px;
+        top: 1000px;
+      }
+      .music {
+        font-family: fantasy;
+        position: absolute;
+        font-size: 40px;
+        color: white;
+        top: 420px;
+        right: 580px;
+        font-weight: bold;
+  			text-shadow: 1.5px 1px 3px gray;
+        letter-spacing: -5px;
+        font-style: oblique;
+        line-height: 5px;
+      }
+      .music p {
+        color: #39cc4d;
+        letter-spacing: 1px;
+      }
+      .body p {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+      }
+      .parallax2 img {
+        border-radius: 50%;
+      }
+			.parallax2 img {
+        margin-left: 20px;
+      }
+      .picture {
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .container {
+        position: relative;
+      }
+
+      .container:hover .picture {
+        opacity: 0.8;
+      }
+      .container:hover .middle {
+        opacity: 1;
+      }
+      .text {
+        color: white;
+        font-size: 16px;
+      }
+      .bold {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .table td {
+        color: white;
+      }
+
+      .title {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .author {
+        font-size: 15px;
+        color: #cfcfcf;
+      }
+    </style>
+    <script>
+    </script>
+    <div class="cover">
+      <div class="title">
+        <div class="music">
+          <h1> MUSIC </h1>
+          <p> to my ears </p>
+        </div>
+      </div>
+    </div>
+    <div class="body">
+      <p>MY FAVORITE ARTISTS</p>
+    </div>
+    <div class="parallax2"> <span class="container"><img class="picture" src="media/images/zedd.jpg"
+          width="10%">
+        <div class="middle">
+          <div class="text"> Zedd </div>
+        </div>
+      </span> <span class="container"><img class="picture" src="media/images/selena.jpeg" width="10%">
+        <div class="middle">
+          <div class="text"> Selena Gomez </div>
+        </div>
+      </span> <span class="container"><img class="picture" src="media/images/camila.jpg" width="10%">
+        <div class="middle">
+          <div class="text"> Camila Cabello </div>
+        </div>
+      </span> <span class="container"><img class="picture" src="media/images/conan.jpg" width="10%">
+        <div class="middle">
+          <div class="text"> Conan Gray </div>
+        </div>
+      </span> <span class="container"><img class="picture" src="media/images/crush.jpg" width="10%">
+        <div class="middle">
+          <div class="text"> Crush </div>
+        </div>
+      </span> <span class="container"><img class="picture" src="media/images/lizzo.jpg" width="10%">
+        <div class="middle">
+          <div class="text"> Lizzo </div>
+        </div>
+      </span> <span class="container"><img class="picture" src="media/images/halsey.jpg" width="10%">
+        <div class="middle">
+          <div class="text"> Halsey </div>
+        </div>
+      </span> <span class="container"><img class="picture" src="media/images/charlie.png" width="10%">
+        <div class="middle">
+          <div class="text"> Charlie Puth </div>
+        </div>
+      </span> </div>
+    <br>
+    <hr> <br>
+    <table class="table">
+      <tbody>
+        <tr width="100%">
+          <td class="bold" width="33.3%">POP</td>
+          <td class="bold" width="33.3%">CALM</td>
+          <td class="bold" width="33.3%">KPOP</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title"> Good Life </div>
+            <div class="author"> G-Eazy &amp; Kehlani </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/Good-life.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title"> Best Part (feat. H.E.R.)</div>
+            <div class="author"> Daniel Caesar </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/HER.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">Way Back Home</div>
+            <div class="author">SHAUN</div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/way-back-home.mp3" type="audio/mpeg">
+            </audio> </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title"> Truth Hurts </div>
+            <div class="author"> LIZZO </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/truth-hurts.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title"> Slow Burn</div>
+            <div class="author"> Kacey Musgraves </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/slow-burn.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">be by my side</div>
+            <div class="author">Crush</div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/crush.mp3" type="audio/mpeg">
+            </audio> </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title"> Cheating On You </div>
+            <div class="author"> Charlie Puth </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/cheating.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title"> Eternal Sunshine</div>
+            <div class="author"> Jhen� Aiko </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/eternal.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">Some</div>
+            <div class="author">BOL4</div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/some.mp3" type="audio/mpeg">
+            </audio> </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title"> Find U Again (feat. Camila Cabello) </div>
+            <div class="author"> Mark Ronson </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/find.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">Better</div>
+            <div class="author"> SG Lewis x Clairo </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/better.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">Chica</div>
+            <div class="author">CHUNG HA</div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/chica.mp3" type="audio/mpeg">
+            </audio> </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title"> I Want You To Know (feat. Selena Gomez) </div>
+            <div class="author"> Zedd </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/zedd.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title"> Hit the Back</div>
+            <div class="author"> King Princess </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/hit-the-back.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">Any song</div>
+            <div class="author">Zico</div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/zico.mp3" type="audio/mpeg">
+            </audio> </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title"> Alone </div>
+            <div class="author"> Halsey </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/alone.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title"> The Other Side</div>
+            <div class="author"> Conan Gray </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/conan.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">Feel Special</div>
+            <div class="author">TWICE</div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/twice.mp3" type="audio/mpeg">
+            </audio> </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title"> Santa Tell Me </div>
+            <div class="author"> Ariana Grande </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/santa.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">Real Friends </div>
+            <div class="author"> Camila Cabello </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/real-friends.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">IF YOU</div>
+            <div class="author">BIGBANG</div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/bigbang.mp3" type="audio/mpeg">
+            </audio> </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title"> Real Love </div>
+            <div class="author"> Clean Bandit &amp; Jess Glynne </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/real-love.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title"> Saturday Nights</div>
+            <div class="author"> Khalid </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/saturday.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">Psycho</div>
+            <div class="author">Red Velvet</div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/psycho.mp3" type="audio/mpeg">
+            </audio> </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title"> Rather Be (feat. Jess Glynne) </div>
+            <div class="author"> Clean Bandit </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/rather-be.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title"> i'm so tired...</div>
+            <div class="author"> Lauv &amp; Troye Sivan </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/tired.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">Chocolate</div>
+            <div class="author">DAY6</div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/chocolate.mp3" type="audio/mpeg">
+            </audio> </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="title"> Vente Pa' Ca (feat. Maluma)</div>
+            <div class="author"> Ricky Martin </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/vente.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title"> La Di Da</div>
+            <div class="author"> Lennon Stella </div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/ladida.mp3" type="audio/mpeg">
+            </audio> </td>
+          <td>
+            <div class="title">BBIBBI</div>
+            <div class="author">IU</div>
+            <br>
+            <audio controls="controls"> <source src="media/audio/bbibbi.mp3" type="audio/mpeg">
+            </audio> </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </body>
+</html>

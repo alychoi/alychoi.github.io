@@ -1,0 +1,293 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div class="topnav" style="background-color: black">
+      <div><a href="website.html"><img style="position:absolute; top:25px;"
+            class="icon"
+            src="media/images/aquamarine.png"
+            width="4%"></a></div>
+      <div class="words" style="background-color: black;"><a class="active" href="website.html">&nbsp;HOME</a></div>
+      <div class="words"><a href="movies.html">MOVIES</a></div>
+      <div class="words"><a href="music.html">MUSIC</a></div>
+      <div class="words"><a href="places.html">PLACES</a></div>
+      <div class="words"><a href="projects.html">PROJECTS</a></div>
+    </div>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .topnav > div {
+        display: inline-block;
+    		*display: inline;
+    		zoom: 1;
+    		width: 15%;
+    		text-align: center;
+      }
+      .topnav {
+        overflow: scroll;
+        border-bottom-style: solid;
+        border-color: white;
+        border-width: 5px;
+        box-shadow: 0px 10px 50px skyblue;
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+      }
+      .topnav .words {
+        oveflow: hidden;
+        padding-top: 45px;
+  			padding-bottom: 45px;
+      }
+      .topnav a {
+  			text-decoration: none;
+  			font-size: 14px;
+        font-weight: bold;
+        color: #989898;
+      }
+      .topnav a:hover {
+        color: #FFFFFF;
+      }
+      .topnav a.active {
+        color: #FFFFFF;
+      }
+      body {
+        margin: 0 auto;
+        font-family: Courier;
+        background: linear-gradient(to top, #6699ff 0%, #ff99cc 100%);
+        letter-spacing: 0.5px;
+      }
+      .container img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 900px;
+        padding-top: 150px;
+      }
+      @media only screen and (max-width: 800px) {
+        .container img {
+          width: 100%;
+        }
+      }
+      .intro {
+        font-size: 27px;
+        color: white;
+        font-weight: bold;
+        border-style: solid;
+        border-color: black;
+        background:black;
+        padding-top: 70px;
+  			padding-bottom: 70px;
+        line-height: 125%;
+        letter-spacing: -0.5px;
+        margin-top: -20px;
+      }
+      .phrase {
+        font-size: 60px;
+        color: black;
+        font-weight: bold;
+        margin-bottom: -40px;
+        padding: 0px;
+        line-height: 0;
+        letter-spacing: -4px;
+      }
+      mark {
+        background-color: #42ddf5;
+      }
+      .parallax, .parallax2, .parallax3, .parallax4 {
+
+ 				 /* Create the parallax scrolling effect */
+ 				background-attachment: fixed;
+  			background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+
+			}
+      .parallax {
+        background-image: url("media/images/splash.JPG");
+        min-height: 600px;
+      }
+      .parallax2 {
+        background-image: url("media/images/scroll.JPG");
+        min-height: 1250px;
+      }
+      .parallax3 {
+        background-image: url("media/images/aboutme.jpg");
+        background-size: 720px 1250px;
+  			background-position: 0px -120px;
+        max-height: 2925px;
+      }
+
+
+      #customers {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      #customers td, #customers th {
+        border-top: 5px solid #282828;
+        border-bottom: 5px solid white;
+        padding: 8px;
+      }
+
+      #customers #left {width: 50%;}
+
+      #customers #right {background-color: black; width: 50%; padding-left: 150px; padding-right: 150px; padding-top: 200px;}
+
+      #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        color: white;
+      }
+      .waffles {
+        border: solid;
+        border-color: #42ddf5;
+        border-width: 5px; 
+      }
+      .end {
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 0.1px;
+        color: white;
+        background-color: black;
+        padding-top: 300px;
+        padding-bottom: 5px;
+        margin: 0;
+
+      }
+      .logos {
+        text-align: center;
+        background-color: black;
+        padding-bottom: 25px;
+
+      }
+      .pin1 {
+        position: absolute;
+        z-index: 4;
+        top: 85px;
+        left: 50%;
+      }
+      .hills {
+        position: relative;
+      }
+    </style>
+    <div class="parallax">
+      <div class="container">
+        <img src="media/images/A-Portrait-01.png">
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="phrase">
+        <p> </p>
+        <center>me. but online.</center>
+        <p></p>
+      </div>
+      <div class="intro">
+        <p> </p>
+        <center>HELLO. I'M ALYSSA CHOI AND I LOVE<br>
+          <mark>STEM AND ART&nbsp;</mark>. I AM A JUNIOR AT<br>
+          <mark>STUYVESANT HIGH SCHOOL&nbsp;</mark></center>
+        <p></p>
+      </div>
+    </div>
+    <div class="parallax2"> </div>
+    <div class="parallax3">
+      <table id="customers">
+        <tbody>
+          <tr>
+            <th id="left"> <br>
+            </th>
+            <th id="right">
+              <h1><b>I like being <mark>active</mark>.</b></h1>
+              <h4>When I was in kindergarten, I went to an art &amp; physical
+                education program called YMCA. Since then, I loved to be active,
+                whether that be team sports, hiking, playing handball with
+                friends, etc. My favorite sports are soccer and fencing, and in
+                the winter I like snowboarding (even though I fall on lot). </h4>
+              <div class="foil"> <img src="media/images/foil.png" width="80%"> </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h1><b>I have a foodstagram!</b></h1>
+              <h4>I love food &amp; photography, so I decided to make a
+                foodstagram. I post a variety of foods that include but are not
+                limited to Sichuan, kbbq, Italian pasta, fresh seafood, waffles
+                for brunch, soup dumblings, satays, burgers, etc. If you like
+                food, follow <mark>@foodstagram.aly</mark> ~ (I really need
+                more followers) <br>
+                <br>
+                Below is one of my posts: </h4>
+              <div class="waffles"> <img src="media/images/waffles.jpg" width="100%"> </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h1><b>I play the oboe.</b></h1>
+              <h4>Even though it makes me sad that not a lot of people know what
+                the oboe is, and even mix it up with hobo, I love playing it and
+                it sounds beautiful ~ <br>
+                <br>
+                My favorite is <mark>Gabriel's Oboe</mark> (The Mission Theme)
+                <br>
+                CLICK TO LISTEN: <i>played by Henrik Chaim Goldschmidt</i> <br>
+                <br>
+                <audio controls="controls"> <source src="media/audio/Gabriel.mp3" type="audio/mpeg">
+                </audio> </h4>
+              <br>
+              <br>
+              <div class="oboe"> <img src="media/images/oboe.png" width="90%"> </div>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+      <div class="forest" style="position: relative;">
+        <div class="hills"><img style="z-index: 4; top: 100px;" src="media/images/queens.png"
+            width="100%"></div>
+        <div class="pin1"> <img src="media/images/pin.PNG" width="13%"> </div>
+      </div>
+    </div>
+    <div class="end">
+      <p>&#169; 2020 Alyssa Choi</p>
+
+      <div class="logos"><a href="https://www.instagram.com/alychoi123/"><img src="media/images/insta.png"
+            width="3%"></a>&nbsp;<a
+          href="https://www.facebook.com/alyssa.choi.7315"><img
+            style="top: 5px;"
+            src="media/images/facebook.png"
+            width="3%"></a></div>
+    </div>
+
+  </body>
+</html>

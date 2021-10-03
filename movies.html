@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movies</title>
+  </head>
+  <body>
+    <div class="topnav" style="background-color: black">
+      <div><a href="index.html"><img style="position:absolute; top:25px;"
+            class="icon"
+            src="media/images/aquamarine.png"
+            width="4%"></a></div>
+      <div class="words" style="background-color: black;"><a href="index.html">&nbsp;HOME</a></div>
+      <div class="words"><a href="movies.html" class="active">MOVIES</a></div>
+      <div class="words"><a href="music.html">MUSIC</a></div>
+      <div class="words"><a href="places.html">PLACES</a></div>
+      <div class="words"><a href="projects.html">PROJECTS</a></div>
+    </div>
+    <style>
+       body {
+        margin: 0 auto;
+        padding: 0 auto;
+				font-family: Courier;
+        background: black;
+        letter-spacing: 0.5px;
+       }
+      .topnav > div {
+        display: inline-block;
+    		*display: inline;
+    		zoom: 1;
+    		width: 15%;
+    		text-align: center;
+      }
+      .topnav {
+        overflow: scroll;
+        border-bottom-style: solid;
+        border-color: white;
+        border-width: 5px;
+        box-shadow: 0px 10px 50px skyblue;
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+        font-family: Courier;
+      }
+      .topnav .words {
+        oveflow: hidden;
+        padding-top: 45px;
+  			padding-bottom: 45px;
+      }
+      .topnav a {
+  			text-decoration: none;
+  			font-size: 14px;
+        font-weight: bold;
+        color: #989898;
+      }
+      .topnav a:hover {
+        color: #FFFFFF;
+      }
+      .topnav a.active {
+        color: #FFFFFF;
+      }
+      .parallax {
+ 				background-attachment: fixed;
+  			background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+      }
+      .cover {
+        background-image: url("media/images/popcorn.jpeg");
+        background-size: cover;
+  			background-repeat: no-repeat;
+  			background-position: center;
+ 				background-attachment: fixed;
+        min-height: 775px;
+        top: 1000px;
+      }
+      .title {
+        position: absolute;
+        font-size: 40px;
+        color: white;
+        top: 270px;
+        right: 520px;
+        font-weight: bold;
+  			text-shadow: 1.5px 1px 3px gray;
+        letter-spacing: -5px;
+        font-style: oblique;
+      }
+
+      .netflix {
+        position: absolute;
+        top: 400px;
+        left: 620px;
+        border: solid;
+        padding-top: 0;
+        padding-bottom: 110px;
+        margin-top: 10px;
+      }
+      .disney {
+        position: absolute;
+        top: 490px;
+        left: 632px;
+      }
+      .marvel {
+        position: absolute;
+        top: 550px;
+        left: 637px;
+      }
+      .body p {
+        color: #dd99ff;
+        font-weight: bold;
+      }
+      .picture {
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .container {
+        position: relative;
+      }
+
+      .container:hover .picture {
+        opacity: 0.3;
+      }
+      .container:hover .middle {
+        opacity: 1;
+      }
+      .text {
+        color: white;
+        font-size: 16px;
+      }
+    </style>
+    <div class="cover">
+      <div class="title">
+        <h1> MOVIES! </h1>
+      </div>
+      <div class="logos"> <img src="media/images/netflix.png" class="netflix" width="13%"> <img
+          src="media/images/disney.png"
+          class="disney"
+          width="11%">
+        <img src="media/images/marvel.png" class="marvel" width="8%"> </div>
+    </div>
+    <div class="body">
+      <p> I like every type of movie except for horror. My favorite genres are
+        action, fantasy, and rom-coms.</p>
+    </div>
+    <div class="parallax2">
+      <table>
+        <tbody>
+          <tr>
+            <td class="container" width="25%"><img class="picture" src="media/images/endgame.jpeg"
+                width="100%">
+              <div class="middle">
+                <div class="text">This Avengers movie is the saddest but it is a
+                  <b>MUST-WATCH!</b> If you haven't watched any of the other
+                  marvel movies, watch it <b>NOW!</b> </div>
+              </div>
+            </td>
+            <td class="container" width="25%"> <img class="picture" src="media/images/spiderman.jpg"
+                width="100%">
+              <div class="middle">
+                <div class="text">Spiderman is my favorite superhero, and out of
+                  all the spiderman movies I've watched (including the ones by
+                  Tobey Maguire and Andrew Garfield), this is the best one. Also
+                  watch Far From Home if you haven't.</div>
+              </div>
+            </td>
+            <td class="container" width="25%"> <img src="media/images/gaurdians.jpg" class="picture"
+                width="100%">
+              <div class="middle">
+                <div class="text">This is the funniest Marvels movie. Highly
+                  recommend you won't be dissapointed!</div>
+              </div>
+            </td>
+            <td class="container" width="25%"> <img class="picture" src="media/images/parasite.jpeg"
+                width="100%">
+              <div class="middle">
+                <div class="text">I might be a bit bias because I'm Korean and I
+                  don't really like thriller, but I <b>LOVE</b> this movie. It
+                  signifies deeper meanings about the rich and poor, and
+                  although it is pretty depressing, the movie is very
+                  entertaining.</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="container" width="25%"> <img class="picture" src="media/images/fastandfurious.jpg"
+                width="100%">
+              <div class="middle">
+                <div class="text">If you really like action and racing movies,
+                  this movie is perfect. It has amazing stunts and the Rock is
+                  in it!</div>
+              </div>
+            </td>
+            <td class="container" width="25%"> <img class="picture" src="media/images/fallout.jpg"
+                width="100%">
+              <div class="middle">
+                <div class="text">This is the only mission impossible movie I've
+                  watched, but it's sooo good. It has the best plot twists and
+                  action scenes.</div>
+              </div>
+            </td>
+            <td class="container" width="25%"> <img class="picture" src="media/images/kungfu.jpg"
+                width="100%">
+              <div class="middle">
+                <div class="text">Kung Fu panda was my childhood. It's the
+                  funniest animation movie and I like the third one especially
+                  because it has so many adorable pandas!</div>
+              </div>
+            </td>
+            <td class="container" width="25%"> <img class="picture" src="media/images/blended.jpg"
+                width="100%">
+              <div class="middle">
+                <div class="text">This is my favorite romantic comedy movie.
+                  Very fun to watch with family and friends. It's so wholesome
+                  and is set in a luxurious resort in Africa.</div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="container" width="25%"> <img class="picture" src="media/images/harrypotter.jpg"
+                width="100%">
+              <div class="middle">
+                <div class="text">I suggest you read the books first, and
+                  although the books are better, the movies are really good too!
+                  My favorite book and movie is the Goblet of Fire, but watch
+                  everything else too!</div>
+              </div>
+            </td>
+            <td class="container" width="25%"> <img class="picture" src="media/images/pitchperfect.jpg"
+                width="100%">
+              <div class="middle">
+                <div class="text">This movie is so funny and plays so many good
+                  songs. The third one is meh but the first and second are a <b>MUST-WATCH!</b></div>
+              </div>
+            </td>
+            <td class="container" width="25%"> <img class="picture" src="media/images/boys.jpg"
+                width="100%">
+              <div class="middle">
+                <div class="text">It's my favorite Netflix original movie so
+                  far, and ig girls like it more. This movie is so relatable and
+                  cute, but the sequel is meh. But watch the first one!</div>
+              </div>
+            </td>
+            <td class="container" width="25%"> <img class="picture" src="media/images/daddy.jpg"
+                width="100%">
+              <div class="middle">
+                <div class="text">This is such a funny holiday movie. Definitely
+                  recommend to watch during Christmas!</div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </body>
+</html>

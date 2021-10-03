@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Places</title>
+  </head>
+  <body>
+    <div class="topnav" style="background-color: black">
+      <div><a href="index.html"><img style="position:absolute; top:25px;"
+            class="icon"
+            src="media/images/aquamarine.png"
+            width="4%"></a></div>
+      <div class="words" style="background-color: black;"><a href="index.html">&nbsp;HOME</a></div>
+      <div class="words"><a href="movies.html">MOVIES</a></div>
+      <div class="words"><a href="music.html">MUSIC</a></div>
+      <div class="words"><a href="places.html" class="active">PLACES</a></div>
+      <div class="words"><a href="projects.html">PROJECTS</a></div>
+    </div>
+    <style>
+      body {
+        margin: 0 auto;
+        padding: 0 auto;
+				font-family: Courier;
+        letter-spacing: 0.5px;
+       }
+      .topnav > div {
+        display: inline-block;
+    		*display: inline;
+    		zoom: 1;
+    		width: 15%;
+    		text-align: center;
+      }
+      .topnav {
+        overflow: scroll;
+        border-bottom-style: solid;
+        border-color: white;
+        border-width: 5px;
+        box-shadow: 0px 10px 50px skyblue;
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+        font-family: Courier;
+      }
+      .topnav .words {
+        oveflow: hidden;
+        padding-top: 45px;
+  			padding-bottom: 45px;
+      }
+      .topnav a {
+  			text-decoration: none;
+  			font-size: 14px;
+        font-weight: bold;
+        color: #989898;
+      }
+      .topnav a:hover {
+        color: #FFFFFF;
+      }
+      .topnav a.active {
+        color: #FFFFFF;
+      }
+      .cover {
+        background-image: url("media/images/nyc-map.jpg");
+        background-size: cover;
+  			background-repeat: no-repeat;
+  			background-position: center;
+        min-height: 1700px;
+
+      }
+      .cover h1 {
+  			position: absolute;
+        font-size: 30;
+        padding: 110px;
+      }
+      .cover img {
+        position: absolute;
+        width: 50px;
+        box-shadow: 0px 0px 10px gray;
+      }
+
+      #marthas {
+        top: 700px;
+        left: 900px;
+      }
+      .picture {
+        opacity: 1;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        top: 970px;
+        left: 280px;
+      }
+      .middle2 {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        top: 500px;
+        left: 920px;
+      }
+      .middle3 {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        top: 980px;
+        left: 390px;
+      }
+      .middle4 {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        top: 860px;
+        left: 500px;
+      }
+      .middle5 {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        top: 975px;
+        left: 720px;
+      }
+      .middle6 {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        top: 660px;
+        left: 900px;
+      }
+      .container {
+        position: relative;
+      }
+
+      .container:hover .picture {
+        opacity: 0.8;
+      }
+      .container:hover .middle {
+        opacity: 1;
+      }
+      .container:hover .middle2 {
+        opacity: 1;
+      }
+      .container:hover .middle3 {
+        opacity: 1;
+      }
+      .container:hover .middle4 {
+        opacity: 1;
+      }
+      .container:hover .middle5 {
+        opacity: 1;
+      }
+      .container:hover .middle6 {
+        opacity: 1;
+      }
+      .container:hover .middle7 {
+        opacity: 1;
+      }
+      .text {
+        border: solid;
+        border-color: white;
+        color: black;
+        padding: 5px;
+        font-size: 20px;
+        line-height: 15px;
+        text-align: center;
+      }
+      .text p {
+        font-size: 15px;
+      }
+    </style>
+    <div class="cover">
+      <h1>RESTAURANTS@NYC</h1>
+      <div class="container"><img style="top: 1000px; left: 280px;" class="picture"
+          src="media/images/pin.png">
+        <div class="middle">
+          <div class="text"> LUPA
+            <p> Italian restaurant <br>
+              170 Thompson St <br>
+              New York, NY 10012</p>
+          </div>
+        </div>
+      </div>
+      <div class="container"> <img style="top: 550px;
+        left: 900px;" class="picture" src="media/images/pin.png">
+        <div class="middle2">
+          <div class="text"> KUNG FU XIAO <br>
+            LONG BAO
+            <p> Best soup dumblings !! <br>
+              59-16 Main St <br>
+              Flushing, NY 11355 </p>
+          </div>
+        </div>
+      </div>
+      <div class="container"> <img style="top:1020px; left:360px;" class="picture"
+          src="media/images/pin.png">
+        <div class="middle3">
+          <div class="text"> Ginger and <br>
+            Lemongrass
+            <p> Trendy-cute <br>
+              Vietnamese place <br>
+              135 Rivington St <br>
+              New York, NY 10002 </p>
+          </div>
+        </div>
+      </div>
+      <div class="container"> <img class="picture" style="top: 900px;
+        left: 500px;" src="media/images/pin.png">
+        <div class="middle4">
+          <div class="text">GREENPOINT FISH <br>
+            &amp; LOBSTER CO.
+            <p> Fresh seafood !!<br>
+              114 Nassau Ave <br>
+              Brooklyn, NY 11222 </p>
+          </div>
+        </div>
+      </div>
+      <div class="container"> <img class="picture" style="top: 1025px;
+        left: 700px;" src="media/images/pin.png">
+        <div class="middle5">
+          <div class="text">SWEET CHICK
+            <p> Hip, gourmet comfort food <br>
+              Popular for its <br>
+              Chicken&amp;Waffles<br>
+              341 Flatbush Ave <br>
+              Brooklyn, NY 11238 </p>
+          </div>
+        </div>
+      </div>
+      <div class="container"> <img class="picture" style="top: 700px;
+        left: 900px;" src="media/images/pin.png">
+        <div class="middle6">
+          <div class="text"> MARTHA'S COUNTRY BAKERY
+            <p> Really good dessert !!<br>
+              Cozy &amp; friendly<br>
+              70-28 Austin St<br>
+              Forest Hills, NY 11375 </p>
+          </div>
+        </div>
+      </div>
+      <div class="container"> <img class="picture" id="marthas" src="pin.png"></div>
+      <div class="middle7">
+        <div class="text"> HELLO</div>
+      </div>
+    </div>
+
+  </body>
+</html>
