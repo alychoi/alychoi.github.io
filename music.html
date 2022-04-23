@@ -7,29 +7,31 @@
   </head>
   <body>
     <div class="topnav" style="background-color: black">
-      <div><a href="index.html"><img style="position:absolute; top:25px;"
+      <div><a href="index.html"><img style="position:absolute;top:22px;"
             class="icon"
             src="media/images/aquamarine.png"
-            width="4%"></a></div>
+            height="40px"></a></div>
       <div class="words" style="background-color: black;"><a href="index.html">&nbsp;HOME</a></div>
-      <div class="words"><a href="movies.html">MOVIES</a></div>
-      <div class="words"><a href="music.html" class="active">MUSIC</a></div>
-      <div class="words"><a href="places.html">PLACES</a></div>
+      <div class="dropdown">
+        <div class="words"><a class="active" href="index.html">FAVORITES</a></div>
+        <div class="dropdown-content">
+          <a href="movies.html">MOVIES</a>
+          <a class="active" href="music.html">MUSIC</a>
+          <a href="places.html">PLACES</a>
+        </div>
+      </div>
+      <div class="words"><a href="gallery.html">GALLERY</a></div>
       <div class="words"><a href="projects.html">PROJECTS</a></div>
     </div>
     <style>
-       body {
-        margin: 0 auto;
-        padding: 0 auto;
-				font-family: Courier;
-        background: black;
-        letter-spacing: 0.5px;
-       }
+      html {
+        scroll-behavior: smooth;
+      }
       .topnav > div {
         display: inline-block;
     		*display: inline;
     		zoom: 1;
-    		width: 15%;
+    		width: 18%;
     		text-align: center;
       }
       .topnav {
@@ -41,12 +43,11 @@
         position: fixed;
         width: 100%;
         z-index: 5;
-        font-family: Courier;
       }
       .topnav .words {
-        oveflow: hidden;
-        padding-top: 45px;
-  			padding-bottom: 45px;
+        overflow: hidden;
+        padding-top: 35px;
+  			padding-bottom: 35px;
       }
       .topnav a {
   			text-decoration: none;
@@ -60,15 +61,25 @@
       .topnav a.active {
         color: #FFFFFF;
       }
-      .cover {
-        background-image: url("media/images/radio.jpeg");
-        background-size: cover;
-  			background-repeat: no-repeat;
-  			background-position: center;
- 				background-attachment: fixed;
-        min-height: 775px;
-        top: 1000px;
+      .dropdown-content {
+        display: none;
+        position: absolute:
       }
+      .dropdown-content a {
+        float: none;
+        display: block;
+        padding-bottom: 10px;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+       body {
+        margin: 0 auto;
+        padding: 0 auto;
+				font-family: Courier;
+        background: black;
+        letter-spacing: 0.5px;
+       }
       .music {
         font-family: fantasy;
         position: absolute;
@@ -86,11 +97,15 @@
         color: #39cc4d;
         letter-spacing: 1px;
       }
+      .body {
+        padding-top: 150px;
+      }
       .body p {
         color: white;
         font-weight: bold;
         font-size: 20px;
         text-align: center;
+        padding-bottom: 30px;
       }
       .parallax2 img {
         border-radius: 50%;
@@ -116,7 +131,9 @@
       .container {
         position: relative;
       }
-
+      td {
+        padding-left: 8%;
+      }
       .container:hover .picture {
         opacity: 0.8;
       }
@@ -148,14 +165,6 @@
     </style>
     <script>
     </script>
-    <div class="cover">
-      <div class="title">
-        <div class="music">
-          <h1> MUSIC </h1>
-          <p> to my ears </p>
-        </div>
-      </div>
-    </div>
     <div class="body">
       <p>MY FAVORITE ARTISTS</p>
     </div>

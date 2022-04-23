@@ -8,14 +8,20 @@
   </head>
   <body>
     <div class="topnav" style="background-color: black">
-      <div><a href="website.html"><img style="position:absolute; top:25px;"
+      <div><a href="index.html"><img style="position:absolute;top:22px;"
             class="icon"
             src="media/images/aquamarine.png"
-            width="4%"></a></div>
+            height="40px"></a></div>
       <div class="words" style="background-color: black;"><a class="active" href="website.html">&nbsp;HOME</a></div>
-      <div class="words"><a href="movies.html">MOVIES</a></div>
-      <div class="words"><a href="music.html">MUSIC</a></div>
-      <div class="words"><a href="places.html">PLACES</a></div>
+      <div class="dropdown">
+        <div class="words"><a href="index.html">FAVORITES</a></div>
+        <div class="dropdown-content">
+          <a href="movies.html">MOVIES</a>
+          <a href="music.html">MUSIC</a>
+          <a href="places.html">PLACES</a>
+        </div>
+      </div>
+      <div class="words"><a href="gallery.html">GALLERY</a></div>
       <div class="words"><a href="projects.html">PROJECTS</a></div>
     </div>
     <style>
@@ -26,7 +32,7 @@
         display: inline-block;
     		*display: inline;
     		zoom: 1;
-    		width: 15%;
+    		width: 18%;
     		text-align: center;
       }
       .topnav {
@@ -40,9 +46,9 @@
         z-index: 5;
       }
       .topnav .words {
-        oveflow: hidden;
-        padding-top: 45px;
-  			padding-bottom: 45px;
+        overflow: hidden;
+        padding-top: 35px;
+  			padding-bottom: 35px;
       }
       .topnav a {
   			text-decoration: none;
@@ -55,6 +61,18 @@
       }
       .topnav a.active {
         color: #FFFFFF;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute:
+      }
+      .dropdown-content a {
+        float: none;
+        display: block;
+        padding-bottom: 10px;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
       }
       body {
         margin: 0 auto;
@@ -148,7 +166,7 @@
       .waffles {
         border: solid;
         border-color: #42ddf5;
-        border-width: 5px; 
+        border-width: 5px;
       }
       .end {
         text-align: center;
